@@ -2,7 +2,5 @@
 layout: default
 ---
 
-# My GitHub Blog ✨
-
-## Recent Posts
-- [My First Blog](/2026/03/13/my-first-post.html)
+<h1>My Blog</h1>
+<a href="/2026/03/13/hello-world.html">Hello World</a>
