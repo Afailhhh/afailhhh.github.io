@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title | default: "我的博客" }}</title>
-    <!-- 引入CSS样式 -->
-    <link rel="stylesheet" href="/assets/css/style.scss">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ site.title }}</title>
+<link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-    <!-- 动态视频背景 -->
-    <video id="bg-video" autoplay loop muted playsinline preload="auto">
-        <source src="/assets/video/bg.mp4" type="video/mp4">
-        你的浏览器不支持视频播放
-    </video>
 
-    <!-- 博客主体内容（所有页面都会显示在这里） -->
-    <div class="content">
-        {{ content }}
-    </div>
+<video class="bg-video" autoplay muted loop playsinline>
+  <source src="/assets/video/bg.mp4" type="video/mp4">
+</video>
+
+<div class="wrapper">
+  {{ content }}
+</div>
+
 </body>
 </html>

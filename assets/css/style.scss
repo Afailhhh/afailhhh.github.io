@@ -1,38 +1,37 @@
-/* 重置默认样式 */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* 视频背景样式（核心） */
-#bg-video {
-    position: fixed; /* 固定在屏幕，滚动页面不移动 */
-    top: 0;
-    left: 0;
-    width: 100vw;    /* 铺满屏幕宽度 */
-    height: 100vh;   /* 铺满屏幕高度 */
-    object-fit: cover; /* 保持视频比例，裁剪多余部分 */
-    z-index: -1;     /* 视频在文字下方，不遮挡内容 */
-    opacity: 0.7;    /* 视频透明度（0-1，数值越小越淡） */
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
-/* 博客内容容器（避免文字被视频覆盖看不清） */
-.content {
-    position: relative; /* 保证文字在视频上方 */
-    z-index: 1;        /* 层级高于视频 */
-    max-width: 800px;  /* 内容宽度，避免太宽 */
-    margin: 2rem auto; /* 居中显示 */
-    padding: 0 20px;
-    color: #fff;       /* 文字白色，适配深色视频 */
-    text-shadow: 0 0 5px #000; /* 文字加阴影，更清晰 */
+/* 🔥 视频背景：绝对居中、铺满、不变形、不抖动 */
+.bg-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 0.85;
 }
 
-/* 可选：标题样式优化 */
-h1, h2, h3 {
-    margin: 1rem 0;
-}
-a {
-    color: #ffd700; /* 链接金色，更显眼 */
-    text-decoration: none;
+/* 内容在视频上方，不被盖住 */
+.wrapper {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-shadow: 0 0 6px rgba(0,0,0,0.7);
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
 }
