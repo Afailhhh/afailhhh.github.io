@@ -5,6 +5,5 @@ layout: default
 # My GitHub Blog ✨
 
 {% for post in site.posts %}
-- {{ post.title }}
-  {{ post.date | date: "%Y-%m-%d" }}
+- {{ post.date | date: "%Y-%m-%d" }}: [{{ post.title }}]({{ post.url }})
 {% endfor %}

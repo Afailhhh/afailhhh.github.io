@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+<p>{{ page.date | date: "%Y-%m-%d" }}</p>
+<div class="post-content">
+  {{ content }}
+</div>
+
+<style>
+  .post-content {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 20px;
+    color: white;
+    text-shadow: 0 0 8px #000;
+  }
+</style>
