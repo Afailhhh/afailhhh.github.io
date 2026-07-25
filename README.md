@@ -1,6 +1,7 @@
 <!-- 1. 顶部背景图区域 -->
+<!-- 1. 顶部背景图区域 -->
 <div align="center">
-  <img src="https://via.placeholder.com/1000x300/f0f0f0/cccccc?text=My+Background+Image" alt="Banner" width="100%">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=250&section=header&text=醉%20倒%20在%20柏%20油%20路%20上%20&fontSize=50&fontAlignY=35&animation=twinkling" width="100%"/>
 </div>
 
 <!-- 2. 动态打字机问候语区域 -->
